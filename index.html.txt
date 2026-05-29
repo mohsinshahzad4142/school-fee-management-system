@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPay | Advanced School Fee Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        edu: {
+                            blue: '#2563EB',
+                            dark: '#0F172A',
+                            green: '#10B981',
+                            light: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-edu-light text-edu-dark font-sans antialiased">
+
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-edu-blue flex items-center gap-2">
+                <span>🎓</span> EduPay<span class="text-edu-dark text-lg font-normal">Manager</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#features" class="hover:text-edu-blue transition">Features</a>
+                <a href="#dashboard-preview" class="hover:text-edu-blue transition">Dashboard</a>
+                <a href="#pricing" class="hover:text-edu-blue transition">Pricing</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-block text-gray-600 font-medium hover:text-edu-blue transition">Book a Demo</a>
+                <a href="#contact" class="bg-edu-blue text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-edu-blue font-semibold uppercase tracking-wider text-sm bg-blue-50 px-3 py-1 rounded-full">Smart School ERP Module</span>
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight mt-4 mb-6 leading-tight">
+                Simplify School Fee Collection & <span class="text-edu-blue">Invoicing</span>
+            </h1>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                Automate fee routing, send instant WhatsApp/Email reminders to parents, generate digital receipts, and track financial analytics with a zero-error system.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" class="bg-edu-blue text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Request Free Demo</a>
+                <a href="#dashboard-preview" class="bg-white border-2 border-gray-200 text-edu-dark text-center px-8 py-4 rounded-xl font-bold hover:border-edu-blue transition">Explore Dashboard</a>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 space-y-6">
+            <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+                <div>
+                    <h3 class="font-bold text-lg">Finance Overview</h3>
+                    <p class="text-xs text-gray-400">Current Month Progress</p>
+                </div>
+                <span class="bg-green-50 text-edu-green text-xs font-bold px-2.5 py-1 rounded-md">Live Sync</span>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-4 rounded-xl">
+                    <p class="text-xs text-gray-500 font-medium">Total Collected</p>
+                    <p class="text-2xl font-black text-edu-blue mt-1">$42,500</p>
+                </div>
+                <div class="bg-amber-50 p-4 rounded-xl">
+                    <p class="text-xs text-gray-500 font-medium">Pending Dues</p>
+                    <p class="text-2xl font-black text-amber-600 mt-1">$8,200</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Recent Paid Invoices</p>
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center text-sm p-3 bg-edu-light rounded-lg">
+                        <span class="font-semibold">Ali Khan (Grade 8)</span>
+                        <span class="text-edu-green font-bold">+$350</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm p-3 bg-edu-light rounded-lg">
+                        <span class="font-semibold">Ayesha Ahmed (Grade 4)</span>
+                        <span class="text-edu-green font-bold">+$280</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete Control Over School Finances</h2>
+                <p class="text-gray-500">Everything you need to eliminate manual ledger books and avoid long queues at the accounts office.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-edu-light border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-2xl">📝</div>
+                    <h3 class="text-xl font-bold mb-3">Custom Fee Structures</h3>
+                    <p class="text-gray-600 leading-relaxed">Set up class-wise tuitions, transport charges, lab funds, or custom discounts/scholarships for individual students easily.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-edu-light border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 text-2xl">🔔</div>
+                    <h3 class="text-xl font-bold mb-3">Automated Reminders</h3>
+                    <p class="text-gray-600 leading-relaxed">Stop chasing payments. Automatically dispatch fee dues warnings via SMS, WhatsApp, and Emails with direct payment links.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-edu-light border border-gray-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-2xl">📊</div>
+                    <h3 class="text-xl font-bold mb-3">Defaulter Lists & Reports</h3>
+                    <p class="text-gray-600 leading-relaxed">Generate 1-click reports of unpaid dues, collection history, and download audit-ready financial statements securely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard-preview" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="bg-edu-dark rounded-3xl text-white p-8 md:p-16 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-edu-blue font-bold tracking-wider text-xs uppercase bg-blue-950 px-3 py-1 rounded-full">Secure Portals</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6">Dual Interface for Admins & Parents</h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="text-xl text-edu-blue">✔</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Admin View</h4>
+                            <p class="text-gray-400 text-sm">Approve concessions, track total daily collection stats, and publish digital challans.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-xl text-edu-blue">✔</div>
+                        <div>
+                            <h4 class="font-bold text-lg">Parent Mobile View</h4>
+                            <p class="text-gray-400 text-sm">View breakdowns, pay online securely using Credit Cards/Bank transfers, and download old receipts instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-2xl">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Sample Student Ledger Card</p>
+                <div class="space-y-3">
+                    <div class="flex justify-between border-b border-slate-700 pb-2 text-sm">
+                        <span class="text-slate-400">Student Name:</span>
+                        <span class="font-medium text-white">Zain Shah</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-700 pb-2 text-sm">
+                        <span class="text-slate-400">Admission No:</span>
+                        <span class="font-medium text-white">#EDU-2026-892</span>
+                    </div>
+                    <div class="flex justify-between border-b border-slate-700 pb-2 text-sm">
+                        <span class="text-slate-400">Pending Amount:</span>
+                        <span class="font-medium text-amber-400 font-bold">$120.00</span>
+                    </div>
+                    <div class="pt-2">
+                        <span class="bg-red-500/20 text-red-400 text-xs px-2.5 py-1 rounded-full font-semibold">Status: Unpaid (Overdue)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white px-6">
+        <div class="max-w-3xl mx-auto bg-edu-light p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold mb-2">Transform Your Campus Today</h2>
+                <p class="text-gray-500">Sign up your institution for a personalized dashboard demonstration setup.</p>
+            </div>
+            <form action="#" method="POST" class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">School/Institute Name</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition" placeholder="e.g., Beaconhouse School System">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Total Expected Students</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition bg-white text-gray-600">
+                            <option>Less than 500 students</option>
+                            <option>500 - 1500 students</option>
+                            <option>More than 1500 students</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Admin Email</label>
+                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition" placeholder="admin@school.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Phone Number</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition" placeholder="+92 300 1234567">
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-edu-blue text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-lg">Schedule Guided Demo Setup</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-edu-dark text-gray-400 py-12 px-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-2xl font-bold tracking-tight text-white">🎓 EduPay<span class="text-edu-blue">Manager</span></p>
+            <p class="text-sm">&copy; 2026 EduPay ERP Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
