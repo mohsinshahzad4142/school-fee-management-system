@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduPay | Advanced School Fee Management System</title>
+    <title>EduFinance ERP | Next-Gen Institutional Fee & Fintech Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        edu: {
-                            blue: '#2563EB',
-                            dark: '#0F172A',
-                            green: '#10B981',
-                            light: '#F8FAFC'
+                        fin: {
+                            blue: '#4F46E5',
+                            dark: '#0B0F19',
+                            indigo: '#6366F1',
+                            success: '#10B981',
+                            light: '#F9FAFB'
                         }
                     }
                 }
@@ -22,190 +23,167 @@
         }
     </script>
 </head>
-<body class="bg-edu-light text-edu-dark font-sans antialiased">
+<body class="bg-fin-light text-fin-dark font-sans antialiased">
 
-    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold tracking-tight text-edu-blue flex items-center gap-2">
-                <span>🎓</span> EduPay<span class="text-edu-dark text-lg font-normal">Manager</span>
+            <a href="#" class="text-2xl font-bold tracking-tight text-fin-blue flex items-center gap-2">
+                <span>💳</span> EduFinance<span class="text-fin-dark text-lg font-normal">ERP</span>
             </a>
             <nav class="hidden md:flex space-x-8 font-medium text-gray-600">
-                <a href="#features" class="hover:text-edu-blue transition">Features</a>
-                <a href="#dashboard-preview" class="hover:text-edu-blue transition">Dashboard</a>
-                <a href="#pricing" class="hover:text-edu-blue transition">Pricing</a>
+                <a href="#fintech-features" class="hover:text-fin-blue transition">Fintech Features</a>
+                <a href="#dynamic-billing" class="hover:text-fin-blue transition">Dynamic Billing</a>
+                <a href="#analytics-preview" class="hover:text-fin-blue transition">Analytics Dashboard</a>
             </nav>
             <div class="flex items-center gap-4">
-                <a href="#contact" class="hidden sm:inline-block text-gray-600 font-medium hover:text-edu-blue transition">Book a Demo</a>
-                <a href="#contact" class="bg-edu-blue text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">Get Started</a>
+                <a href="#demo" class="bg-fin-blue text-white px-5 py-2.5 rounded-xl font-semibold hover:bg-indigo-700 transition shadow-md">Schedule ERP Demo</a>
             </div>
         </div>
     </header>
 
     <section class="pt-32 pb-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
-            <span class="text-edu-blue font-semibold uppercase tracking-wider text-sm bg-blue-50 px-3 py-1 rounded-full">Smart School ERP Module</span>
+            <span class="text-fin-blue font-semibold uppercase tracking-wider text-xs bg-indigo-50 px-3 py-1 rounded-full">Automated Institutional Fintech Hub</span>
             <h1 class="text-4xl md:text-5xl font-black tracking-tight mt-4 mb-6 leading-tight">
-                Simplify School Fee Collection & <span class="text-edu-blue">Invoicing</span>
+                Transform Fees Collection with <span class="text-fin-blue">Smart Automation</span>
             </h1>
             <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                Automate fee routing, send instant WhatsApp/Email reminders to parents, generate digital receipts, and track financial analytics with a zero-error system.
+                Schools, Colleges, aur Universities kelye complete fintech ecosystem. Omnichannel online payments, credit-hour billing, automated WhatsApp alerts, aur instant income tax certificate portal generation—sab kuch ek jagah.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#contact" class="bg-edu-blue text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Request Free Demo</a>
-                <a href="#dashboard-preview" class="bg-white border-2 border-gray-200 text-edu-dark text-center px-8 py-4 rounded-xl font-bold hover:border-edu-blue transition">Explore Dashboard</a>
+                <a href="#demo" class="bg-fin-blue text-white text-center px-8 py-4 rounded-xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Request Sandbox Access</a>
+                <a href="#analytics-preview" class="bg-white border-2 border-gray-200 text-fin-dark text-center px-8 py-4 rounded-xl font-bold hover:border-fin-blue transition">Watch Analytics Live</a>
             </div>
         </div>
         
         <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 space-y-6">
             <div class="flex justify-between items-center border-b border-gray-100 pb-4">
                 <div>
-                    <h3 class="font-bold text-lg">Finance Overview</h3>
-                    <p class="text-xs text-gray-400">Current Month Progress</p>
+                    <h3 class="font-bold text-base">University Finance Hub</h3>
+                    <p class="text-xs text-gray-400">Spring Semester 2026 Tracking</p>
                 </div>
-                <span class="bg-green-50 text-edu-green text-xs font-bold px-2.5 py-1 rounded-md">Live Sync</span>
+                <span class="bg-emerald-50 text-fin-success text-xs font-bold px-2.5 py-1 rounded-md flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-fin-success animate-pulse"></span> Bank Sync Active
+                </span>
             </div>
             
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-blue-50 p-4 rounded-xl">
-                    <p class="text-xs text-gray-500 font-medium">Total Collected</p>
-                    <p class="text-2xl font-black text-edu-blue mt-1">$42,500</p>
+                <div class="bg-indigo-50/50 p-4 rounded-2xl border border-indigo-100/50">
+                    <p class="text-xs text-gray-500 font-medium">Omnichannel Gross Revenue</p>
+                    <p class="text-2xl font-black text-fin-blue mt-1">$642,850</p>
+                    <span class="text-[10px] text-fin-success font-medium">▲ 18% vs last semester</span>
                 </div>
-                <div class="bg-amber-50 p-4 rounded-xl">
-                    <p class="text-xs text-gray-500 font-medium">Pending Dues</p>
-                    <p class="text-2xl font-black text-amber-600 mt-1">$8,200</p>
+                <div class="bg-rose-50 p-4 rounded-2xl border border-rose-100">
+                    <p class="text-xs text-gray-500 font-medium">Outstanding Dues (Defaulters)</p>
+                    <p class="text-2xl font-black text-rose-600 mt-1">$24,100</p>
+                    <span class="text-[10px] text-gray-400">Automated reminders dispatched</span>
                 </div>
             </div>
 
-            <div>
-                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Recent Paid Invoices</p>
-                <div class="space-y-2">
-                    <div class="flex justify-between items-center text-sm p-3 bg-edu-light rounded-lg">
-                        <span class="font-semibold">Ali Khan (Grade 8)</span>
-                        <span class="text-edu-green font-bold">+$350</span>
-                    </div>
-                    <div class="flex justify-between items-center text-sm p-3 bg-edu-light rounded-lg">
-                        <span class="font-semibold">Ayesha Ahmed (Grade 4)</span>
-                        <span class="text-edu-green font-bold">+$280</span>
-                    </div>
+            <div class="space-y-2">
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Collection Methods Breakdown</p>
+                <div class="flex items-center justify-between text-xs p-2.5 bg-slate-50 rounded-xl">
+                    <span class="font-medium text-gray-600">Mobile Wallets (EasyPaisa/JazzCash)</span>
+                    <span class="font-bold text-slate-900">45%</span>
+                </div>
+                <div class="flex items-center justify-between text-xs p-2.5 bg-slate-50 rounded-xl">
+                    <span class="font-medium text-gray-600">Direct Bank Transfer (IBFT/1-Link)</span>
+                    <span class="font-bold text-slate-900">38%</span>
+                </div>
+                <div class="flex items-center justify-between text-xs p-2.5 bg-slate-50 rounded-xl">
+                    <span class="font-medium text-gray-600">Credit/Debit Cards (Visa/MC)</span>
+                    <span class="font-bold text-slate-900">17%</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="features" class="py-20 bg-white px-6">
+    <section id="fintech-features" class="py-20 bg-white px-6">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Complete Control Over School Finances</h2>
-                <p class="text-gray-500">Everything you need to eliminate manual ledger books and avoid long queues at the accounts office.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Advanced Features built for Next-Gen Campuses</h2>
+                <p class="text-gray-500">Manual billing registers ko choren. Modern system se fine automated calculation aur accounts management ko scale karein.</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-edu-light border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6 text-2xl">📝</div>
-                    <h3 class="text-xl font-bold mb-3">Custom Fee Structures</h3>
-                    <p class="text-gray-600 leading-relaxed">Set up class-wise tuitions, transport charges, lab funds, or custom discounts/scholarships for individual students easily.</p>
+                <div class="p-8 rounded-2xl bg-fin-light border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-indigo-100 text-fin-blue rounded-xl flex items-center justify-center mb-6 text-2xl">📱</div>
+                    <h3 class="text-xl font-bold mb-3">WhatsApp Billing Links</h3>
+                    <p class="text-gray-600 leading-relaxed">Challan generate hote hi parents ke WhatsApp par clickable, customized short-payment gateway link chala jata hai.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-edu-light border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-6 text-2xl">🔔</div>
-                    <h3 class="text-xl font-bold mb-3">Automated Reminders</h3>
-                    <p class="text-gray-600 leading-relaxed">Stop chasing payments. Automatically dispatch fee dues warnings via SMS, WhatsApp, and Emails with direct payment links.</p>
+                <div class="p-8 rounded-2xl bg-emerald-100/40 border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6 text-2xl">🧾</div>
+                    <h3 class="text-xl font-bold mb-3">1-Click Income Tax Certificates</h3>
+                    <p class="text-gray-600 leading-relaxed">Parents bina accounts branch ke chakkar lagaye portal se direct dynamic tax certificates download kar sakte hain.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-edu-light border border-gray-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6 text-2xl">📊</div>
-                    <h3 class="text-xl font-bold mb-3">Defaulter Lists & Reports</h3>
-                    <p class="text-gray-600 leading-relaxed">Generate 1-click reports of unpaid dues, collection history, and download audit-ready financial statements securely.</p>
+                <div class="p-8 rounded-2xl bg-fin-light border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6 text-2xl">⚡</div>
+                    <h3 class="text-xl font-bold mb-3">Dynamic Rules & Scholarships</h3>
+                    <p class="text-gray-600 leading-relaxed">Kinship discounts, merit-based waivers, aur delay penalties/fines ka systems ke rules ke mutabiq autonomous processing logic.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="dashboard-preview" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="bg-edu-dark rounded-3xl text-white p-8 md:p-16 grid md:grid-cols-2 gap-12 items-center">
+    <section id="dynamic-billing" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="bg-fin-dark rounded-3xl text-white p-8 md:p-16 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <span class="text-edu-blue font-bold tracking-wider text-xs uppercase bg-blue-950 px-3 py-1 rounded-full">Secure Portals</span>
-                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6">Dual Interface for Admins & Parents</h2>
+                <span class="text-fin-blue font-bold tracking-wider text-xs uppercase bg-indigo-950 px-3 py-1 rounded-full">Multi-Tier Architecture</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-4 mb-6">Designed for Schools, Colleges, and Universities</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">Hamara dynamic ERP algorithm institutions ke operational types ke mutabiq apni core calculation modules badal leta hai.</p>
+                
                 <div class="space-y-4">
                     <div class="flex gap-4">
-                        <div class="text-xl text-edu-blue">✔</div>
+                        <div class="text-xl text-fin-blue">✔</div>
                         <div>
-                            <h4 class="font-bold text-lg">Admin View</h4>
-                            <p class="text-gray-400 text-sm">Approve concessions, track total daily collection stats, and publish digital challans.</p>
+                            <h4 class="font-bold text-base">Class-wise / Installments Logic (Schools)</h4>
+                            <p class="text-slate-400 text-sm">Monthly standard fees allocation tracker along with custom transport and mess parameters routing.</p>
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <div class="text-xl text-edu-blue">✔</div>
+                        <div class="text-xl text-fin-blue">✔</div>
                         <div>
-                            <h4 class="font-bold text-lg">Parent Mobile View</h4>
-                            <p class="text-gray-400 text-sm">View breakdowns, pay online securely using Credit Cards/Bank transfers, and download old receipts instantly.</p>
+                            <h4 class="font-bold text-base">Credit Hour & Course Freeze Tracking (Universities)</h4>
+                            <p class="text-slate-400 text-sm">Integrates directly with Campus Management System (CMS) to modify challan value dynamically based on registered semester credit units.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-2xl">
-                <p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-4">Sample Student Ledger Card</p>
-                <div class="space-y-3">
-                    <div class="flex justify-between border-b border-slate-700 pb-2 text-sm">
-                        <span class="text-slate-400">Student Name:</span>
-                        <span class="font-medium text-white">Zain Shah</span>
+            
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 shadow-2xl space-y-4">
+                <div class="flex justify-between items-center text-xs text-slate-400">
+                    <span>TRANSACTION LEDGER TOKEN</span>
+                    <span class="text-fin-success font-mono font-bold">STATUS: PAID</span>
+                </div>
+                <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-3">
+                    <div class="flex justify-between text-xs">
+                        <span class="text-slate-500">Base Tuition (12 Credit Hours)</span>
+                        <span class="font-mono text-slate-300">$1,200.00</span>
                     </div>
-                    <div class="flex justify-between border-b border-slate-700 pb-2 text-sm">
-                        <span class="text-slate-400">Admission No:</span>
-                        <span class="font-medium text-white">#EDU-2026-892</span>
+                    <div class="flex justify-between text-xs">
+                        <span class="text-slate-500">Science Laboratory Surcharge</span>
+                        <span class="font-mono text-slate-300">$75.00</span>
                     </div>
-                    <div class="flex justify-between border-b border-slate-700 pb-2 text-sm">
-                        <span class="text-slate-400">Pending Amount:</span>
-                        <span class="font-medium text-amber-400 font-bold">$120.00</span>
+                    <div class="flex justify-between text-xs text-emerald-400">
+                        <span class="font-medium">Merit Scholarship Waiver (-25%)</span>
+                        <span class="font-mono">-$300.00</span>
                     </div>
-                    <div class="pt-2">
-                        <span class="bg-red-500/20 text-red-400 text-xs px-2.5 py-1 rounded-full font-semibold">Status: Unpaid (Overdue)</span>
+                    <div class="border-t border-slate-800 pt-2 flex justify-between text-sm font-bold">
+                        <span>Net Account Payable</span>
+                        <span class="font-mono text-fin-blue">$975.00</span>
                     </div>
                 </div>
+                <div class="text-[11px] text-center text-slate-500">Digital Receipt Hash: 9e28fa10b772ce4589d</div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-white px-6">
-        <div class="max-w-3xl mx-auto bg-edu-light p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold mb-2">Transform Your Campus Today</h2>
-                <p class="text-gray-500">Sign up your institution for a personalized dashboard demonstration setup.</p>
+    <section id="analytics-preview" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Audit-Ready Financial Analytics</h2>
+                <p class="text-gray-500">Accounts department kelye daily automated accounting ledger reconciliation reports aur error-free statement summaries.</p>
             </div>
-            <form action="#" method="POST" class="space-y-6">
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-semibold mb-2">School/Institute Name</label>
-                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition" placeholder="e.g., Beaconhouse School System">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold mb-2">Total Expected Students</label>
-                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition bg-white text-gray-600">
-                            <option>Less than 500 students</option>
-                            <option>500 - 1500 students</option>
-                            <option>More than 1500 students</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-semibold mb-2">Admin Email</label>
-                        <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition" placeholder="admin@school.com">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold mb-2">Phone Number</label>
-                        <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-edu-blue transition" placeholder="+92 300 1234567">
-                    </div>
-                </div>
-                <button type="submit" class="w-full bg-edu-blue text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200 text-lg">Schedule Guided Demo Setup</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="bg-edu-dark text-gray-400 py-12 px-6 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-2xl font-bold tracking-tight text-white">🎓 EduPay<span class="text-edu-blue">Manager</span></p>
-            <p class="text-sm">&copy; 2026 EduPay ERP Systems. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            
+            <div class="bg-fin-light border border-gray-200 rounded-2xl p-6 md:p-8 shadow-sm max-w-4xl mx-auto">
+                <p class="text-xs font-bold uppercase text-gray-400 tracking-wider mb-4">
